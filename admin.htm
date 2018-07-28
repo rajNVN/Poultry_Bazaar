@@ -1,0 +1,100 @@
+<html>
+<head>
+    <style>
+    label1
+    {
+        margin-left:20px;
+        font-size:20px;
+    }
+    label
+        {
+            margin-left:20px;
+            font-size:20px;
+            color:white;
+        }
+        h1{
+            color:green;
+        }
+               body {
+  background: url('images/m.jpg') center center fixed;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        lb{
+        margin-bottom:10px;
+            background-color:currentColor;
+        }
+    </style>
+    <title>ADMIN</title>
+    <script type="text/javascript" src=js/admin.js></script>
+</head>
+<body onload="load()">
+    <br>
+    <center><img src="images\ll1.gif"></center>
+    <form id="myform">
+        <br><br>
+        <div style="width:30px;float:left">  .</div>
+		<div style="background-color:grey;height:30px;width:620px;float:left;padding:15px;">
+            <label1>Select User-Id    :</label>
+            <select id="dealers">
+                <option value="0" style="display:block">select dealerId</option>
+                <option value="1" style="display:none"> one</option>
+                <option value="2" style="display:none"> two</option>
+                <option value="3" style="display:none"> three</option>
+                <option value="4" style="display:none"> four</option>
+                <option value="5" style="display:none"> 5</option>
+                <option value="6" style="display:none"> 6</option>
+                <option value="7" style="display:none"> 7</option>
+                <option value="8" style="display:none"> 8</option>
+                <option value="9" style="display:none"> 9</option>
+                <option value="10" style="display:none"> 10</option>
+                <option value="11" style="display:none"> 11</option>
+                <option value="12" style="display:none"> 12</option>
+                <option value="13" style="display:none"> 13</option>
+                <option value="14" style="display:none"> 14</option>
+                <option value="15" style="display:none"> 15</option>
+            </select>
+            <label1>Date    :</label><input type="text" style="width:150px" placeholder="DD" id="K1"/>
+                 <label1><input type="button" value="VIEW" style="width:100px;" onclick="viewdet()"/></label1>
+        </div>
+        <div style="background-color:black;height:30px;width:600px;float:left;padding:15px;">
+            <label id="l2" >Name:</label>
+            <input type="text" style="width:150px;" id="K2"/>
+            <label id="l3" >Id:</label>
+            <input type="text" style="width:50px;" id="K3"/>
+            <label1>
+                <input type="button" style="width:100px;" onclick="adddet()" value="ADD DEALER"/></label1>
+            <label1><input type="button" style="width:100px;" onclick="logout()" value="LOGOUT"/></label1>
+        </div>
+
+        <div style="width:1000px;height:50px;padding:10px;">.</div>        
+        <DIV STYLE=" HEIGHT:700PX; WIDTH:100PX;FLOAT:LEFT;">
+		</DIV>
+		<DIV STYLE="BACKGROUND-COLOR:gray; HEIGHT:20PX; WIDTH:900PX;FLOAT:left  ;PADDING:100PX; display:none;" id="d1">
+           Total Weight:<input type="text"  value="vv"placeholder="weight" id="f1"readonly/>
+
+            No.of chickens  :<input type="text" placeholder="chickens" id="f2"readonly/>
+
+            Rate    :<input type="text" placeholder="rate" id="f3"readonly/><br/>   <br/>
+
+            
+            </DIV>
+        <div style="height:10px;width:900px;display:none;"  id="d2">
+            <p style="float:left;font-size:20px;">Wastage may go:<input type="text" id="f4"readonly/></p>
+            <p style="float:right;font-size:20px;">Suggested rate to sell:<input type="text" id="f5"readonly/></p></div>
+        <DIV STYLE="BACKGROUND-COLOR:gray; HEIGHT:20PX; WIDTH:900PX;FLOAT:left  ;PADDING:100PX;display:none;" id="d3">
+           Sold(in kg's):<input type="text" placeholder="total sold" id="f6"readonly/>
+
+            Selling Rate  :<input type="text" placeholder="Rate" id="f7"readonly/>
+
+            Extra(in rs)    :<input type="text" placeholder="extras" id="f8"readonly/><br/>   <br/>
+
+           
+            </DIV>
+        <div style="height:10px;width:900px;display:none;" id="d4">
+            <p style="float:left;font-size:30px;">Total cash in cashbox may:<input type="text" id="f9"readonly/></p>
+            <p style="float:right;font-size:30px;">Profit:<input type="text" id="f10"readonly/></p></div>
+    </div>
+            </body></html>

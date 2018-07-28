@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>SIGN-UP</TITLE>
+    <style>
+h1{
+	color:green;
+}
+       body {
+  background: url('images/m.jpg') center center fixed;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    </style>
+<script type=text/javascript src="js/signup.js"></script>
+</HEAD>
+<BODY>
+<br>
+<center><img src="images\ll2.gif"></center>
+<BR>
+<BR>
+	<FORM ID="MYFORM" METHOD="POST" >
+		<DIV STYLE=" HEIGHT:100PX; WIDTH:200PX;FLOAT:LEFT;">
+		</DIV>
+		<DIV STYLE="BACKGROUND-COLOR:grey; HEIGHT:250PX; WIDTH:700PX;FLOAT:left   ;PADDING:100PX;">
+			<DIV STYLE="FLOAT:LEFT;WIDTH:350PX;HEIGHT:250PX;">
+            <DIV STYLE="FLOAT:LEFT;WIDTH:100PX;HEIGHT:250PX;">
+            NAME	     :
+             <BR/><BR/><BR/>
+            PHONE NO	:<BR/><BR/><BR/>
+            USERID	:<BR/><BR/><BR/></DIV>
+            <DIV STYLE="FLOAT:LEFT;WIDTH:150PX;HEIGHT:250PX;">    
+            <INPUT TYPE="TEXT" PLACEHOLDER="Name" REQUIRED="REQUIRED" STYLE="WIDTH:200PX;" ID="F1"/><BR/><BR/><BR/>
+            <INPUT TYPE="TEXT" PLACEHOLDER="Phone"  REQUIRED="REQUIRED" PATTERN=9|8|7?.+[9]  STYLE="WIDTH:200PX;"  ID="F3" onchange="mobile()"/><BR/><BR/><BR/>
+            <INPUT TYPE="TEXT" STYLE="WIDTH:200PX;" PLACEHOLDER="UserID" ID="F5" readonly/><BR/><BR/><BR/></DIV>
+            </DIV>
+			<DIV STYLE="FLOAT:LEFT;WIDTH:300PX;">
+            <DIV STYLE="FLOAT:LEFT;WIDTH:100PX;HEIGHT:250PX;">
+            EMAIL	     :
+             <BR/><BR/><BR/>
+            DEALER ID	:<BR/><BR/><BR/>
+            PASSWORD	:<BR/><BR/><BR/></DIV>
+            <DIV STYLE="FLOAT:LEFT;WIDTH:150PX;HEIGHT:250PX;">
+            <INPUT TYPE="EMAIL" PLACEHOLDER="email" REQUIRED="REQUIRED" PATTERN=".+@?.com" STYLE="WIDTH:200PX;" ID="F2" onchange="copy()"/><BR/><BR/><BR/>
+            <INPUT TYPE="TEXT" PLACEHOLDER="DealerId" PATTERN="5?.+[3]" STYLE="WIDTH:200PX;" ID="F4"/>	<br/><br/><BR/>
+            <INPUT TYPE="PASSWORD" NAME="PASSWORD" STYLE="WIDTH:200PX;" ID="F6"/>
+            </DIV>
+			<INPUT TYPE="SUBMIT" VALUE="SUBMIT" ONCLICK="record()" STYLE="WIDTH:100PX;FLOAT:RIGHT;"/>
+		</div>
+	</FORM>
+	
+</BODY>
+</HTML>

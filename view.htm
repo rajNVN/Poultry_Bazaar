@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>VIEW</title>
+    <STYLE>
+        h1{
+	color:green;
+}
+              body {
+ 
+background-color:darkgray;
+        }
+        
+label1{
+        margin-left:50px;
+    font-size:30px;
+}
+               body {
+  background: url('images/m.jpg') center center fixed;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        </style>
+<script type="text/javascript" src=js/view.js>
+        
+     
+        </script>
+
+ 
+</head>
+<BODY onload="load()">
+    <br>
+<form id="myform">
+    <center><img src="images\ll3.gif"></center>
+    <br><br>
+    <input type="button" value="LOGOUT" style="height:50px;width:100px;float:right;"onclick="logout()"/>
+    
+    <FORM ID="MYFORM" >
+   
+       <div style="height:100px;width:1250px;">
+         <div style="width:330px;height:100px;float:left"> <input type="button" value="ADD" style="height:50px;width:100px;float:left;"onclick="openadd()"/></div>
+		<div style="background-color:grey;height:40px;width:620px;float:left;padding:15px;">
+            
+            <label1> Select Date    :</label1>
+            <input type="text" style="width:150px;height:25px;" placeholder="DD" id="K1"/>
+            <input type="button" value="VIEW" style="width:100px;height:45px;float:right;" onclick="viewdet()"/>
+        </div>
+        </div>
+        <DIV STYLE=" HEIGHT:700PX; WIDTH:100PX;FLOAT:LEFT;">
+		</DIV>
+        
+		<DIV STYLE="BACKGROUND-COLOR:gray; HEIGHT:20PX; WIDTH:900PX;FLOAT:left  ;PADDING:100PX; display:none;" id="d1">
+           Total Weight:<input type="text" placeholder="weight" id="f1"readonly/>
+
+            No.of chickens  :<input type="text" placeholder="chickens" id="f2"readonly/>
+
+            Rate    :<input type="text" placeholder="rate" id="f3"readonly/><br/>   <br/>
+
+            
+            </DIV>
+        <div style="height:10px;width:900px;display:none;"  id="d2">
+            <p style="float:left;font-size:20px;">Wastage may go:<input type="text" id="f4"readonly/></p>
+            <p style="float:right;font-size:20px;">Suggested rate to sell:<input type="text" id="f5"readonly/></p></div>
+        <DIV STYLE="BACKGROUND-COLOR:gray; HEIGHT:20PX; WIDTH:900PX;FLOAT:left  ;PADDING:100PX;display:none;" id="d3">
+           Sold(in kg's):<input type="text" placeholder="total sold" id="f6"readonly/>
+
+            Selling Rate  :<input type="text" placeholder="Rate" id="f7"readonly/>
+
+            Extra(in rs)    :<input type="text" placeholder="extras" id="f8"readonly/><br/>   <br/>
+
+           
+            </DIV>
+        <div style="height:10px;width:900px;display:none;" id="d4">
+            <p style="float:left;font-size:30px;">Total cash in cashbox may:<input type="text" id="f9"readonly/></p>
+            <p style="float:right;font-size:30px;">Profit:<input type="text" id="f10"readonly/></p></div>
+    </div>
+    </FORM>
+</BODY>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>ADD</title>
+    <STYLE>
+        h1{
+	color:green;
+}
+       body {
+  background: url('images/m.jpg') center center fixed;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+         
+    </STYLE>
+    <script type="text/javascript" src=js/add.js></script>
+
+
+</head>
+<BODY onload="load()">
+    <br>
+    <center><img src="images\ll4.gif"></center>
+    <input type="button" value="LOGOUT" style="height:50px;width:100px;float:right;"onclick="logout()"/>
+    <input type="button" value="HISTORY" style="height:50px;width:100px;float:right;"onclick="openadd()"/>
+    <FORM ID="MYFORM" >
+        <br/><br/><br/>
+
+       <DIV STYLE=" HEIGHT:700PX; WIDTH:100PX;FLOAT:LEFT;">
+		</DIV>
+		<DIV STYLE="BACKGROUND-COLOR:gray; HEIGHT:20PX; WIDTH:900PX;FLOAT:left  ;PADDING:100PX;">
+           Total Weight(in.kgs:)<input type="text" placeholder="weight" id="f1"/>
+
+            No.of chickens  :<input type="text" placeholder="chickens" id="f2"/>
+
+            Rate(in.Rs):<input type="text" placeholder="rate" id="f3"/><br/>   <br/>
+
+            <input type="button" value="NEXT->" style="float:right;" onclick="validate1()"/>
+            
+            </DIV>
+        <div style="height:10px;width:900px;DISPLAY:NONE" id="div1">
+            <p style="float:left;font-size:20px;">Wastage may go(in.Kgs):<input type="text" id="f4"/></p>
+            <p style="float:right;font-size:20px;">Suggested rate to sell(in.Rs):<input type="text" id="f5"/></p></div>
+        <DIV STYLE="BACKGROUND-COLOR:gray; HEIGHT:20PX; WIDTH:900PX;FLOAT:left  ;PADDING:100PX;DISPLAY:NONE" id="div2">
+           Sold(in.Kgs):<input type="text" placeholder="total sold" id="f6"/>
+
+            Selling Rate(in.Rs):<input type="text" placeholder="Rate" id="f7"/>
+
+            Extra(in.Rs):<input type="text" placeholder="extras" id="f8"/><br/>   <br/>
+
+            <input type="button" value="NEXT->" style="float:right;" onclick="validate2()" />
+        
+            </DIV>
+        <div style="height:10px;width:900px;DISPLAY:NONE" id="div3">
+            <p style="float:left;font-size:20px;">Total cash in cashbox may(in.Rs):<input type="text" id="f9"/></p>
+            <p style="float:right;font-size:20px;">Profit:(in.Rs)<input type="text" id="f10"/></p></div>
+            <div style="height:10px;width:900px;float:right;padding:50px;DISPLAY:NONE" id="div4"><input type="button" style="width:100px;height:30px;float:right;" value="RECORD" onclick="record()"/>
+            </div>
+        
+    </FORM>
+</BODY>
+</html>
